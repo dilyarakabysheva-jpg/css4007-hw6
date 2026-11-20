@@ -1,0 +1,66 @@
+=== RULE CHECKS ===
+PASS (1,1) up: outside map -> stays at (1,1)
+PASS (1,1) left: outside map -> stays at (1,1)
+PASS (1,2) down: wall (2,2) -> stays at (1,2)
+PASS (1,2) down into wall: reward is mud -3 (tile where move ends)
+PASS wall (2,2) is not a state
+PASS ice (2,3) action up: probabilities sum to 1 -> [(0.8, (0, 2), -1), (0.1, (1, 2), -1), (0.1, (1, 3), -10)]
+PASS ice (2,3) action right: probabilities sum to 1 -> [(0.8, (1, 3), -10), (0.1, (0, 2), -1), (0.1, (2, 2), -1)]
+PASS ice (2,3) action down: probabilities sum to 1 -> [(0.8, (2, 2), -1), (0.1, (1, 2), -1), (0.1, (1, 3), -10)]
+PASS ice (2,3) action left: probabilities sum to 1 -> [(0.8, (1, 2), -1), (0.1, (0, 2), -1), (0.1, (2, 2), -1)]
+PASS all non-terminal states/actions: probabilities sum to 1
+PASS enter mud M (1,2): reward -3
+PASS enter sand D (3,2): reward -2
+PASS enter water W (3,4): reward -5
+PASS enter goal G (1,4): reward +10
+PASS enter hole H (2,4): reward -10
+PASS sand is deterministic
+PASS water is deterministic
+PASS terminal (1,4): no transitions, no further reward
+PASS terminal (2,4): no transitions, no further reward
+PASS terminal values stay 0
+ALL CHECKS PASSED
+
+=== PAPER MAP: V1 ===
+  -1.000.   -1.000M   10.000.    0.000G
+  -1.000.    ####     -1.000I    0.000H
+  -1.000S   -1.000.   -1.000.   -1.000.
+
+=== PAPER MAP: V2 at requested positions (all four actions) ===
+(1,2) M: up=-3.900, right=8.000, down=-3.900, left=-1.900 -> V2=8.000, best=['right']
+(1,3) .: up=8.000, right=10.000, down=-1.900, left=-3.900 -> V2=10.000, best=['right']
+(2,3) I: up=5.210, right=-7.390, down=-2.710, left=-0.910 -> V2=5.210, best=['up']
+
+=== PAPER MAP: ['.M.G', '.#IH', 'S...'] ===
+converged=True, iterations=12, final max change=2.165e-07
+Values:
+   4.200.    8.000M   10.000.    0.000G
+   2.780.    ####      5.824I    0.000H
+   1.536S    2.818.    4.242.    2.818.
+Policy (ties broken in order up, right, down, left):
+> > > G 
+^ # ^ H 
+> > ^ < 
+Tied states: none
+
+=== EXTENDED MAP: ['.M.G', '.#IH', 'SD.W'] ===
+converged=True, iterations=11, final max change=2.406e-07
+Values:
+   4.200.    8.000M   10.000.    0.000G
+   2.780.    ####      5.824I    0.000H
+   1.502S    2.818D    4.242.    2.818W
+Policy (ties broken in order up, right, down, left):
+> > > G 
+^ # ^ H 
+^ > ^ < 
+Tied states: none
+
+=== SIMULATION (computed policy, 3 x 50 episodes) ===
+| Map | Batch seed | Goals /50 | Holes /50 | Time limits /50 | Mean steps | Mean discounted return |
+| --- | --- | --- | --- | --- | --- | --- |
+| paper | 11 | 42 | 8 | 0 | 4.98 | 0.891 |
+| paper | 22 | 46 | 4 | 0 | 5.04 | 1.915 |
+| paper | 33 | 48 | 2 | 0 | 5.04 | 2.492 |
+| extended | 11 | 50 | 0 | 0 | 5.00 | 1.502 |
+| extended | 22 | 50 | 0 | 0 | 5.00 | 1.502 |
+| extended | 33 | 50 | 0 | 0 | 5.00 | 1.502 |

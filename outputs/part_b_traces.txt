@@ -1,0 +1,447 @@
+##### slippery=False, policy=random | batch 11 | seed 11000 | outcome=hole | steps=10
+actions: Up Up Up Down Down Up Down Left Up Right
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+  (Up)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+  (Left)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+  (Up)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Right)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+##### slippery=False, policy=random | batch 11 | seed 11009 | outcome=goal | steps=22
+actions: Up Right Left Right Right Up Left Left Left Down Down Left Right Right Up Down Up Down Up Down Down Right
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Right)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Left)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Right)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Right)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+  (Left)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Left)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Left)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+  (Left)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+  (Right)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+  (Up)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+  (Up)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+  (Up)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+  (Down)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+##### slippery=False, policy=fixed | batch 11 | seed 11000 | outcome=goal | steps=6
+actions: Down Down Right Down Right Right
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+  (Down)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+  (Right)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+##### slippery=False, policy=fixed: no 'fail' episode was observed
+
+##### slippery=True, policy=random | batch 11 | seed 11000 | outcome=hole | steps=5
+actions: Up Up Up Down Down
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Up)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+##### slippery=True, policy=random | batch 22 | seed 22034 | outcome=goal | steps=13
+actions: Down Down Right Down Up Left Right Down Down Left Up Right Down
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Down)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Right)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+  (Left)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+  (Right)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+  (Down)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+  (Down)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+  (Left)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+  (Up)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+  (Right)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+  (Down)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+##### slippery=True, policy=fixed | batch 11 | seed 11000 | outcome=hole | steps=8
+actions: Down Left Left Left Left Down Down Down
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Left)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Left)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Left)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+  (Left)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+##### slippery=True, policy=fixed | batch 11 | seed 11020 | outcome=goal | steps=14
+actions: Down Down Down Right Down Right Right Down Down Down Down Right Down Right
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+  (Down)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+  (Right)
+SFFF
+FHFH
+FFFH
+H[41mF[0mFG
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+  (Down)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+  (Down)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+  (Right)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+  (Down)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
